@@ -6,10 +6,10 @@ export default function Home() {
       <main
         className="flex min-h-screen flex-col items-center p-24 space-y-8"
         style={{
-          backgroundColor: "#181918",
-          backgroundImage: `url("/logo-dark.svg")`,
+          backgroundColor: "#161716",
+          backgroundImage: `url("/harmonic-tesselation-dark.svg")`,
           backgroundRepeat: "repeat",
-          backgroundSize: "10%",
+          backgroundSize: "6.25%",
         }}
       >
         <Image
