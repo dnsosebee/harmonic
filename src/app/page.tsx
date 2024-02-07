@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <header>
-        <Link href={"/"} className="flex items-center space-x-3 pb-3">
+        <Link href={"/"} className="flex items-center space-x-3 bg-slate-900">
           <Image
             src="/harmonic-icon.svg"
             alt="Harmonic"
@@ -17,20 +17,20 @@ export default function Home() {
         </Link>
       </header>
       <main
-        className="flex  flex-col items-center p-24 grow"
+        className="flex  flex-col items-center sm:p-10 lg:p-16 grow"
         style={{
           backgroundImage: `url("/harmonic-tesselation-dark.svg")`,
           backgroundRepeat: "repeat",
           backgroundSize: "6.25%",
         }}
       >
-        <section className="space-y-8 prose flex flex-col">
+        <section className="space-y-6 prose flex flex-col bg-slate-900 py-6 sm:px-6 shadow-2xl rounded-xl">
           <Image
             src="/harmonic-icon.svg"
             width={200}
             height={200}
             alt="Harmonic"
-            className="shadow-2xl self-center"
+            className="shadow-2xl self-center rounded"
           />
           <p className="text-slate-200 shadow-2xl">
             Harmonic Software LLC is a software consultancy specializing in AI applications. We work
