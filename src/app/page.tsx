@@ -1,26 +1,48 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
+      <header>
+        <Link href={"/"} className="flex items-center space-x-3 pb-3">
+          <Image
+            src="/harmonic-icon.svg"
+            alt="Harmonic"
+            className="shadow-2xl"
+            width={50}
+            height={50}
+          />
+          <h1 className="text-2xl text-slate-200 shadow-2xl mt-1">Harmonic Software</h1>
+        </Link>
+      </header>
       <main
-        className="flex min-h-screen flex-col items-center p-24 space-y-8"
+        className="flex  flex-col items-center p-24 grow"
         style={{
-          backgroundColor: "#161716",
           backgroundImage: `url("/harmonic-tesselation-dark.svg")`,
           backgroundRepeat: "repeat",
           backgroundSize: "6.25%",
         }}
       >
-        <Image
-          src="/harmonic-icon.svg"
-          width={200}
-          height={200}
-          alt="Harmonic"
-          className="shadow-2xl"
-        />
-        <p className="text-gray-500 shadow-2xl">Coming soon</p>
+        <section className="space-y-8 prose flex flex-col">
+          <Image
+            src="/harmonic-icon.svg"
+            width={200}
+            height={200}
+            alt="Harmonic"
+            className="shadow-2xl self-center"
+          />
+          <p className="text-slate-200 shadow-2xl">
+            Harmonic Software LLC is a software consultancy specializing in AI applications. We work
+            closely with our clients throughout the entire product lifecycle, aiding in design,
+            production, and maintenance of AI systems. Contact: info@harmonic.so
+          </p>
+        </section>
       </main>
+      <footer className="">
+        <p>Contact: info@harmonic.so</p>
+        <p>© 2024 Harmonic Software LLC. All rights reserved.</p>
+      </footer>
     </>
   );
 }
