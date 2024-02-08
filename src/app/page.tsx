@@ -24,7 +24,7 @@ export default function Home() {
         }}
       >
         <div className="flex flex-col items-center grow bg-white bg-opacity-95">
-          <section className="space-y-6 prose flex flex-col bg-white py-6 sm:px-6 grow border-x-2 border-gray-200">
+          <section className="space-y-6 prose flex flex-col bg-white py-6 sm:px-6 grow border-x border-gray-200">
             <Image
               src="/harmonic-logo.svg"
               width={100}
