@@ -4,16 +4,15 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <header>
-        <Link href={"/"} className="flex items-center space-x-3 bg-slate-900">
+      <header className="bg-white">
+        <Link href={"/"}>
           <Image
-            src="/harmonic-icon.svg"
-            alt="Harmonic"
-            className="shadow-2xl"
-            width={50}
-            height={50}
+            src="/harmonic-wordmark.svg"
+            alt="Harmonic Software logo"
+            width={200}
+            height={40}
+            className="bg-green-200 px-2  m-3 shadow-lg outline outline-1 outline-green-300 rounded-sm"
           />
-          <h1 className="text-2xl text-slate-200 shadow-2xl mt-1">Harmonic Software</h1>
         </Link>
       </header>
       <main
@@ -33,9 +32,9 @@ export default function Home() {
             className="shadow-2xl self-center rounded"
           />
           <p className="text-slate-200 shadow-2xl">
-            Harmonic Software LLC is a software consultancy specializing in AI applications. We work
-            closely with our clients throughout the entire product lifecycle, aiding in design,
-            production, and maintenance of AI systems. Contact: info@harmonic.so
+            Harmonic Software is a consultancy specializing in AI applications. We work closely with
+            our clients throughout the entire product lifecycle, aiding in design, production, and
+            maintenance of AI systems. Contact: info@harmonic.so
           </p>
         </section>
       </main>
