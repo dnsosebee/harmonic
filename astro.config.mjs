@@ -9,10 +9,10 @@ export default defineConfig({
       favicon: "/favicon.ico",
       title: "Harmonic Software",
       description: "Harmonic software is a trusted software agency for the age of AI.",
-      // logo: {
-      //   light: "/logo/harmonic-logo-light.svg",
-      //   dark: "/logo/harmonic-logo-dark.svg",
-      // },
+      logo: {
+        light: "./src/assets/logo/harmonic-logo-light.svg",
+        dark: "./src/assets/logo/harmonic-logo-dark.svg",
+      },
       social: {
         linkedin: "https://www.linkedin.com/company/harmonic-software-llc/",
       },
