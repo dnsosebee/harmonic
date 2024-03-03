@@ -113,7 +113,9 @@ a:hover {
   color: var(--primary-color);
 }
 
-p a {
+p a,
+h3 a,
+blockquote a {
   text-decoration: none;
   box-shadow: inset 0 -0.12em 0 var(--primary-color);
   -webkit-transition: box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
