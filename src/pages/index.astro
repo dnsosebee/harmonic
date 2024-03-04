@@ -1,8 +1,8 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-const title = 'Harmonic Software';
-const description = 'The perfect starter for your perfect blog.';
+const title = "Harmonic Software";
+const description = "The perfect starter for your perfect blog.";
 const permalink = Astro.site!.href;
 ---
 
@@ -10,117 +10,173 @@ const permalink = Astro.site!.href;
   <div class="home-container">
     <div class="home-copy">
       <h1 class="text-blue-500">Harmonic Software</h1>
-      <p>Building AI products that are more than just chatbots.</p>
+      <p>Building web applications who think.</p>
       <div class="flex gap-4">
         <a
-        href="mailto:info@harmonic.so"
-        class="rounded-full bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+          href="mailto:info@harmonic.so"
+          class="rounded-full bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
         >
-        Contact
+          Contact
         </a>
         <a
           href="#about"
           class="rounded-full bg-white px-4 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
         >
-          Learn more <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M10 3a1 1 0 0 1 1 1v9.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-5 5a1 1 0 0 1-1.414 0l-5-5a1 1 0 0 1 1.414-1.414L9 13.586V4a1 1 0 0 1 1-1z"/>
+          About <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 inline-block"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 3a1 1 0 0 1 1 1v9.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-5 5a1 1 0 0 1-1.414 0l-5-5a1 1 0 0 1 1.414-1.414L9 13.586V4a1 1 0 0 1 1-1z"
+            ></path>
+          </svg>
         </a>
-      </div>  
-  </div>
-
-    <div class="hero-image-container">
-        <img class="hero-image" alt="technical diagrams" src="/assets/hero.png">
+      </div>
     </div>
 
+    <div class="hero-image-container">
+      <img class="hero-image" alt="technical diagrams" src="/assets/hero.png" />
+    </div>
   </div>
 
   <div class="container">
-
     <h2 class="text-blue-500" id="about">About</h2>
     <p>
-      Hi I'm <a href="https://www.linkedin.com/in/danielsosebee" target="_blank">Daniel Sosebee</a>, founder of Harmonic Software. I've had the privelege of working with fantastic companies like The Josh Bersin Company and Sana Labs to bring their AI products to life. I provide <span class="font-semibold bg-yellow-500 bg-opacity-40">full-stack product development</span> and <span class="font-semibold bg-yellow-500 bg-opacity-40">technical advising</span> services, working closely with my clients to apply the latest and best AI technology to their business needs.
-      <br/>
-      <br/>
-      <span class="">On the technical side:</span> I specialize in <a href="https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/" target="_blank">retrieval-augmented generation</a> and <a href="https://en.wikipedia.org/wiki/Cognitive_architecture" target="_blank">cognitive architectures</a> — enabling LLMs to follow complex workflows and interact with domain-specific data. I delight in taking on challenges that no one has solved before.
-      <br/>
-      <br/>
-      If you're interested in working together, please <a href="mailto:info@harmonic.so">reach out</a> with some details and we can schedule an intro call.
+      Hi I'm <a href="https://www.linkedin.com/in/danielsosebee" target="_blank">Daniel Sosebee</a
+      >, founder of Harmonic Software. I've had the privelege of working with fantastic companies
+      like The Josh Bersin Company and Sana Labs to bring their AI products to life. I provide <span
+        class="font-semibold bg-yellow-500 bg-opacity-40">full-stack product development</span
+      > and <span class="font-semibold bg-yellow-500 bg-opacity-40">technical advising</span> services,
+      working closely with my clients to apply the latest and best AI technology to their business
+      needs.
+      <br />
+      <br />
+      <span class="">On the technical side:</span> I specialize in <a
+        href="https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/"
+        target="_blank">retrieval-augmented generation</a
+      > and <a href="https://en.wikipedia.org/wiki/Cognitive_architecture" target="_blank"
+        >cognitive architectures</a
+      > — enabling LLMs to follow complex workflows and interact with domain-specific data. I've also
+      worked on cognitive architectures for <em>human</em> workflows through projects like <a
+        href="https://a.methodable.com"
+        target="_blank">Methodable</a
+      >.
+      <br />
+      <br />
+      If you're interested in working together, please <a href="mailto:info@harmonic.so"
+        >reach out</a
+      > with some details and we can schedule a call.
     </p>
 
     <div class="bg-blue-500 bg-opacity-10 p-4 rounded-lg shadow">
-      
-    <h2 class="text-blue-500">Projects</h2>
+      <h2 class="text-blue-500">Selected projects</h2>
 
-    <div class="flex-col space-y-4 py-6">
-      <div class="border-t-2 border-gray-500 border-opacity-30 mx-2"></div>
+      <div class="flex-col space-y-4 py-6">
+        <div class="border-t-2 border-gray-500 border-opacity-30 mx-2"></div>
 
-      <div class="flex gap-6  items-center">
-        <img src="/assets/projects/sana-logo.png" alt="Sana Labs" class="object-cover h-24 w-24 rounded shadow-sm ml-1" />
-        <div>
-          <h3><a href="https://sana.ai" target="_blank">Sana AI</a></h3>
-          <p class="-mt-1">
-            Designing systems that enable Sana's enterprise AI assistant to take action and execute workflows
-          </p>
+        <div class="flex gap-6 items-center">
+          <img
+            src="/assets/projects/sana-logo.png"
+            alt="Sana Labs"
+            class="object-cover h-24 w-24 rounded shadow-sm ml-1"
+          />
+          <div>
+            <h3><a href="https://sana.ai" target="_blank">Sana AI</a></h3>
+            <p class="-mt-1">
+              Designing systems that enable Sana's enterprise AI assistant to take action and
+              execute workflows
+            </p>
+          </div>
+        </div>
+
+        <div class="border-t-2 border-gray-500 border-opacity-30 mx-2"></div>
+
+        <div class="flex gap-6 items-center">
+          <img
+            src="/assets/projects/the-josh-bersin-logo.png"
+            alt="The Josh Bersin Company"
+            class="object-cover h-24 w-24 rounded shadow-sm ml-1"
+          />
+          <div>
+            <h3>
+              <a href="https://sanalabs.com/galileo" target="_blank"
+                >Galileo by The Josh Bersin Company</a
+              >
+            </h3>
+
+            <p class="-mt-1">
+              Advising on AI product strategy and building software to support Galileo, the first
+              AI knowledge assistant for HR
+            </p>
+          </div>
+        </div>
+
+        <div class="border-t-2 border-gray-500 border-opacity-30 mx-2"></div>
+
+        <div class="flex gap-6 items-center">
+          <img
+            src="/assets/projects/digital-abacus-logo.png"
+            alt="The Digital Abacus"
+            class="object-cover h-24 w-24 rounded shadow-sm ml-1"
+          />
+          <div>
+            <h3>
+              <a href="https://digital-abacus.vercel.app/" target="_blank">The Digital Abacus</a> (<a
+                href="https://github.com/dnsosebee/digital-abacus"
+                target="_blank">source</a
+              >)
+            </h3>
+            <p class="-mt-1">
+              Built a full-stack interactive web application for mathematical modeling
+            </p>
+          </div>
+        </div>
+
+        <div class="border-t-2 border-gray-500 border-opacity-30 mx-2"></div>
+
+        <div class="flex gap-6 items-center">
+          <img
+            src="/assets/projects/methodable.png"
+            alt="Methodable"
+            class="object-cover h-24 w-24 rounded shadow-sm ml-1"
+          />
+          <div>
+            <h3>
+              <a href="https://a.methodable.com" target="_blank">Methodable</a> (<a
+                href="https://github.com/dnsosebee/methodable"
+                target="_blank">source</a
+              >)
+            </h3>
+            <p class="-mt-1">
+              Designed and built a web tool for defining and executing complex human workflows
+            </p>
+          </div>
         </div>
       </div>
-
-      <div class="border-t-2 border-gray-500 border-opacity-30 mx-2"></div>
-
-      <div class="flex gap-6 items-center">
-        <img src="/assets/projects/the-josh-bersin-logo.png" alt="The Josh Bersin Company" class="object-cover h-24 w-24 rounded shadow-sm ml-1" />
-        <div>
-          <h3><a href="https://sanalabs.com/galileo" target="_blank">Galileo by The Josh Bersin Company</a></h3>
-
-          <p class="-mt-1">
-            Advising on AI product strategy and building software to support Galileo, the first AI knowledge assistant for HR
-          </p>
-        </div>
-      </div>
-      
-      <!-- <div class="border-t-2 border-gray-500 border-opacity-30 mx-2" />
-
-      <div class="flex gap-6  items-center">
-        <img src="/assets/projects/methodable.png" alt="Methodable" class="object-cover h-24 w-24 rounded shadow-sm ml-1" />
-        <div>
-          <h3><a href="https://a.methodable.com" target="_blank">Methodable</a></h3>
-          <p class="-mt-1">
-            A web interface for defining and executing complex human workflows
-          </p>
-        </div>
-      </div> -->
-
-      <div class="border-t-2 border-gray-500 border-opacity-30 mx-2"></div>
-
-      <div class="flex gap-6  items-center">
-        <img src="/assets/projects/digital-abacus-logo.png" alt="The Digital Abacus" class="object-cover h-24 w-24 rounded shadow-sm ml-1" />
-        <div>
-          <h3><a href="https://github.com/dnsosebee/digital-abacus" target="_blank">The Digital Abacus</a></h3>
-          <p class="-mt-1">
-            Built a full-stack interactive web application for mathematical modeling
-          </p>
-        </div>
-      </div>
-    </div>
     </div>
 
     <h2 class="text-blue-500">Testimonials</h2>
     <blockquote>
-      I often describe the period before Daniel as “a bunch of academics moving boulders around.” Afterwards it was like “magic hands,” with many things moving quickly and effortlessly into place.
+      I often describe the period before Daniel as “a bunch of academics moving boulders
+      around.” Afterwards it was like “magic hands,” with many things moving quickly and
+      effortlessly into place.
       <br />
       <br />
-      Daniel is extremely easy to work with and highly collaborative... I would strongly recommend Daniel to anyone needing quality software development and intend to hire him myself in the future.
+      Daniel is extremely easy to work with and highly collaborative... I would strongly recommend
+      Daniel to anyone needing quality software development and intend to hire him myself in the
+      future.
       <br />
       <br />
-      <cite>Paul Dancstep of <a href="https://github.com/dnsosebee/digital-abacus">The Digital Abacus</a></cite>
+      <cite>- Paul Dancstep of The Digital Abacus</cite>
     </blockquote>
 
     <div class="flex justify-center gap-4 pt-4">
-    <img src="/assets/logo.svg" alt="Harmonic Software" class="h-12 w-12" />
+      <img src="/assets/logo.svg" alt="Harmonic Software" class="h-12 w-12" />
     </div>
   </div>
-
-
-
 </BaseLayout>
 
 <style>
@@ -159,7 +215,7 @@ const permalink = Astro.site!.href;
   }
 
   .caption {
-    font-size: .8em;
+    font-size: 0.8em;
     font-style: italic;
     text-align: left;
   }
