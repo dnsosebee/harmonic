@@ -2,27 +2,29 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const title = "Harmonic Software";
-const description = "Building web applications who think.";
+const description = "Building applications for human-AI collaboration.";
 const permalink = Astro.site!.href;
 ---
 
 <BaseLayout title={title} description={description} permalink={permalink}>
   <div class="home-container">
     <div class="home-copy">
-      <h1 class="text-blue-500">Harmonic Software</h1>
-      <p>Building web apps who think.</p>
+      <h1 class="text-blue-500">
+        <span class="glowy-text">Harmonic Software</span>
+      </h1>
+      <p>We build smart and reliable AI web applications.</p>
       <div class="flex gap-4 justify-center md:justify-start">
         <a
           href="mailto:info@harmonic.so"
           class="rounded-full bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
         >
-          Contact
+          Get in touch
         </a>
         <a
           href="#about"
-          class="rounded-full px-4 py-2.5 text-sm font-semibold shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-900 hover:bg-opacity-10"
+          class="rounded-full px-4 py-2.5 text-sm font-semibold shadow-sm ring-1 ring-inset ring-gray-500 ring-opacity-30 hover:bg-gray-900 hover:bg-opacity-10"
         >
-          About <svg
+          Learn more <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-4 w-4 inline-block"
             viewBox="0 0 20 20"
@@ -42,32 +44,30 @@ const permalink = Astro.site!.href;
     </div>
   </div>
 
-  <div class="container">
-    <h2 class="text-blue-500" id="about">About</h2>
+  <div class="container reg-background p-2 rounded-xl">
+    <h2 class="text-blue-500 my-1" id="about">About</h2>
     <p>
       Hi I'm <a href="https://www.linkedin.com/in/danielsosebee" target="_blank">Daniel Sosebee</a>,
       founder of Harmonic Software. Harmonic Software is a California LLC that provides <span
-        class="font-semibold bg-yellow-500 bg-opacity-40">full-stack AI product development</span
-      > and <span class="font-semibold bg-yellow-500 bg-opacity-40">technical advising</span> services,
+        class="font-semibold bg-yellow-500 bg-opacity-40">AI product advising</span
+      > and <span class="font-semibold bg-yellow-500 bg-opacity-40">full-stack development</span> services,
       working closely with clients to apply the latest and best AI technology to their business needs.
       <br />
       <br />
-      <span class="">On the technical side:</span> I specialize in implementing <a
+      <span class="">On the technical side:</span> I specialize in <a
         href="https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/"
         target="_blank">retrieval-augmented generation</a
-      > apps and designing <a
-        href="https://en.wikipedia.org/wiki/Cognitive_architecture"
-        target="_blank">cognitive architectures</a
-      > — enabling LLMs to follow workflows and interact with your domain-specific data. I've also worked
+      > and <a href="https://en.wikipedia.org/wiki/Cognitive_architecture" target="_blank"
+        >cognitive architectures</a
+      > — enabling LLMs to reliably follow workflows and interact with domain-specific data. I also work
       on cognitive architectures for <em>human</em> workflows through projects like <a
         href="https://a.methodable.com"
         target="_blank">Methodable</a
       >.
       <br />
       <br />
-      If you're interested in working together, please <a href="mailto:info@harmonic.so"
-        >reach out</a
-      > with some details and we can schedule a call.
+      If you're looking for help with your AI product or strategy I'd love to speak with you. Reach out
+      to <a href="mailto:info@harmonic.so"> info@harmonic.so </a> and we can set up a call.
     </p>
 
     <div class="bg-blue-500 bg-opacity-5 pt-4 pb-3 px-4 rounded-lg shadow">
@@ -84,14 +84,14 @@ const permalink = Astro.site!.href;
           />
           <div>
             <h3>
-              <a href="https://sanalabs.com/galileo" target="_blank"
+              <a href="https://joshbersin.com/Galileo/" target="_blank"
                 >Galileo by The Josh Bersin Company</a
               >
             </h3>
 
             <p class="-mt-1">
-              Advising on AI product strategy and building software to support Galileo, the first AI
-              knowledge assistant for HR
+              Built full-stack prototypes and maintain data systems for Galileo, the world's first
+              AI assistant for HR professionals
             </p>
           </div>
         </div>
@@ -105,10 +105,15 @@ const permalink = Astro.site!.href;
             class="object-cover h-24 w-24 rounded shadow-sm ml-1"
           />
           <div>
-            <h3><a href="https://sana.ai" target="_blank">Sana AI</a></h3>
+            <h3>
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7199361073152450560/"
+                target="_blank">Sana AI</a
+              >
+            </h3>
             <p class="-mt-1">
-              Designing full-stack systems that enable Sana's enterprise AI assistant to take action
-              and execute workflows
+              Built Salesforce agent for enterprise customers, developing agent framework for
+              trustworthy execution of multi-step workflows
             </p>
           </div>
         </div>
@@ -128,9 +133,7 @@ const permalink = Astro.site!.href;
                 target="_blank">open source</a
               >)
             </h3>
-            <p class="-mt-1">
-              Built a full-stack interactive web application for mathematical modeling
-            </p>
+            <p class="-mt-1">Built full-stack interactive web app for mathematical modeling</p>
           </div>
         </div>
 
@@ -149,9 +152,7 @@ const permalink = Astro.site!.href;
                 target="_blank">open source</a
               >)
             </h3>
-            <p class="-mt-1">
-              Designed and built a web tool for defining and executing complex human workflows
-            </p>
+            <p class="-mt-1">Designed and built web tool for complex human workflows</p>
           </div>
         </div>
       </div>
@@ -187,7 +188,7 @@ const permalink = Astro.site!.href;
 
   .home-copy {
     flex: 1;
-    padding: 0 1em;
+    padding: 1em;
   }
 
   .home-copy h1 {
@@ -222,6 +223,10 @@ const permalink = Astro.site!.href;
     margin-bottom: 1em;
   }
 
+  .reg-background {
+    background-color: var(--background-body) !important;
+  }
+
   @media (max-width: 1200px) {
     p {
       font-size: 1.2em;
@@ -243,4 +248,11 @@ const permalink = Astro.site!.href;
       text-align: center;
     }
   }
+
+  /* .glowy-text {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    text-shadow: -2px 4px rgba(0, 0, 0, 0.7);
+  } */
 </style>
