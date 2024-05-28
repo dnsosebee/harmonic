@@ -39,7 +39,12 @@ const { title, description, permalink, current } = Astro.props;
             rgba(150, 150, 150, 0.2) 0%,
             rgba(150, 150, 150, 0) 50%
           ),
-          url("/assets/60-lines.png");
+          url("/assets/60-lines.png"),
+          radial-gradient(
+            circle at center bottom,
+            rgba(150, 150, 150, 0.2) 0%,
+            rgba(150, 150, 150, 0) 70%
+          );
         background-size: cover, auto; /* Ensures gradient covers entire area, and texture repeats naturally */
         background-repeat: no-repeat, repeat; /* Prevents gradient from repeating, allows texture to repeat */
         background-blend-mode: multiply;
